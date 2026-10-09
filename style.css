@@ -1,0 +1,428 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* NAVIGASI */
+header {
+    background: #151515;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 4px solid #c8102e;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+/* HERO */
+.hero {
+    min-height: 380px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.3)
+        ),
+        linear-gradient(
+            135deg,
+            #8e001d,
+            #d7193f,
+            #252525
+        );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.eyebrow {
+    color: #f4c542;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: #f4c542;
+    color: #151515;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* KONTEN UTAMA */
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 22px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* IDENTITAS KLUB DAN SEJARAH */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.card {
+    min-width: 0;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid #c8102e;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.card h3 {
+    color: #c8102e;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* SUPPORTER */
+.supporter {
+    width: 100%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    border-top: 4px solid #c8102e;
+    box-shadow: 0 5px 20px #00000010;
+    text-align: center;
+}
+
+.supporter h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.supporter-intro {
+    color: #555;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+/* DAFTAR SUPPORTER */
+.supporter-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.supporter-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.supporter-card h3 {
+    color: #151515;
+    margin-bottom: 8px;
+}
+
+.supporter-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* BUTTON BEST PLAYER */
+.player-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 18px;
+    background: #c8102e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.player-button:hover {
+    background: #a50d25;
+}
+
+/* BUTTON CHANTS */
+.chants-button {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 30px auto 0;
+    padding: 12px 22px;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chants-button:hover {
+    background: #a50d25;
+}
+
+/* PESAN */
+.callout {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background: #fff4d0;
+    border-left: 5px solid #f4c542;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* GAMBAR KONTEN */
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: #151515;
+    color: #ddd;
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+footer p {
+    margin-top: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 900px) {
+    header {
+        padding: 15px 4%;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .cards {
+        max-width: 750px;
+        gap: 20px;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px 5%;
+    }
+
+    .brand {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        white-space: normal;
+    }
+
+    .hero {
+        min-height: 320px;
+        padding: 50px 6%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 35px 15px;
+    }
+
+    .section-title,
+    .supporter h2 {
+        font-size: 27px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .supporter {
+        max-width: 450px;
+        margin: 30px auto;
+        padding: 22px 15px;
+    }
+
+    .supporter-card {
+        padding: 16px;
+    }
+
+    .callout {
+        margin-top: 25px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+    }
+}
+
+/* RESPONSIVE HP KECIL */
+@media (max-width: 400px) {
+    .brand {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 40px 5%;
+    }
+
+    main {
+        padding: 25px 12px;
+    }
+}
+```

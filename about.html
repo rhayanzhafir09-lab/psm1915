@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - PSM Makassar</title>
+
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <!-- NAVIGASI -->
+    <header>
+        <div class="brand">
+            <img src="psm.png" class="logo" alt="Logo PSM">
+            <span>PSM MAKASSAR</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="#about">About Me</a>
+            <a href="#komentar">Komentar</a>
+        </nav>
+    </header>
+
+    <!-- ABOUT ME -->
+    <main>
+
+        <section class="about" id="about">
+
+            <div class="about-title">
+                <span>ABOUT ME</span>
+                <h1>KENALI RONG PEMBUATNYA</h1>
+                <p>
+                    PROGRAMMER PEMULA TO PRO PROGRAMMER
+                </p>
+            </div>
+
+            <div class="profile">
+
+                <div class="photo-box">
+                    <img src="foto.jpg" alt="Foto Rhayan">
+                </div>
+
+                <div class="profile-info">
+                    <h2>RHAYAN ZHAFIR ATTHAYA</h2>
+
+                    <div class="data">
+                        <p><strong>Kelas :</strong> XI.7</p>
+                        <p><strong>Sekolah :</strong> SMAN 9 MAKASSAR</p>
+                        <P><strong>Hobi :</strong> Adalah pokoknya</p>
+                    </div>
+
+                    <p class="description">
+                        Saya adalah pembuat website ini yang ingin belajar
+                        lebih jauh mengenai pembuatan website dan teknologi.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="contact">
+
+    <h2>Contact Saya</h2>
+
+    <p class="contact-intro">
+        Hubungi atau kunjungi akun saya melalui link berikut.
+    </p>
+
+    <div class="contact-list">
+
+        <div class="contact-card">
+            <strong>Instagram</strong>
+            <a href="https://www.instagram.com/Raayzhfr/" target="_blank">
+               @Raayzhfr
+           </a>
+        </div>
+
+        <div class="contact-card">
+            <strong>GitHub</strong>
+            <a href="https://github.com/rhayanzhafir09-lab" target="_blank">
+                @HOHOHO
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <strong>Email</strong>
+            <a href="mailto:rhayanzhafir09@gmail.com">
+                rhayanzhafir09@gmail.com
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ALASAN MEMBUAT WEBSITE -->
+        <section class="reason">
+
+            <h2>Mengapa Saya Membuat Website Ini?</h2>
+
+            <p>
+                Saya membuat website ini karena saya ingin memperkenalkan
+                PSM Makassar sebagai salah satu klub sepak bola kebanggaan
+                Sulawesi Selatan. Selain itu, website ini saya buat sebagai
+                bentuk tugas sekaligus untuk mengembangkan kemampuan saya
+                dalam membuat website menggunakan HTML dan CSS.
+            </p>
+
+        </section>
+
+        <!-- KOMENTAR -->
+        <section class="comments" id="komentar">
+
+            <h2>Komentar ta' mengenai website ini</h2>
+
+            <p class="comment-intro">
+                waktu dan tempat dipersilahkan.
+            </p>
+
+            <div class="comment-form">
+
+                <label for="name">Nama</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Masukkan nama kamu"
+                    maxlength="50"
+                >
+
+                <label for="comment">Komentar</label>
+
+                <textarea
+                    id="comment"
+                    placeholder="contoh : DEH KERENKI TAWWA WEBNYA"
+                    maxlength="500"
+                ></textarea>
+
+                <button type="button">
+                    Kirim Komentar
+                </button>
+
+            </div>
+
+            <!-- KOMENTAR DARI DATABASE AKAN MUNCUL DI SINI -->
+            <div class="comment-list"></div>
+
+        </section>
+
+        <!-- KEMBALI -->
+        <div class="back">
+            <a href="index.html">← Kembali ke Beranda</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <strong>PSM Makassar</strong>
+            <p>EWAKOOO</p>
+        </div>
+
+        <div class="footer-logo">
+            <img src="smansel.png" alt="Logo Sekolah">
+        </div>
+
+        <div>
+            <strong>TRIBUN BAGIAN SMANSEL</strong>
+        </div>
+    </footer>
+
+    <!-- SUPABASE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- SCRIPT DATABASE -->
+    <script src="script.js"></script>
+
+</body>
+</html>

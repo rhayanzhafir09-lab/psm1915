@@ -1,0 +1,396 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* NAVIGASI */
+header {
+    background: #151515;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #c8102e;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+/* KONTEN */
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 22px;
+}
+
+/* JUDUL */
+.about-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-title span {
+    color: #c8102e;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.about-title h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.about-title p {
+    color: #666;
+}
+
+/* PROFILE */
+.profile {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    border-top: 5px solid #c8102e;
+    box-shadow: 0 5px 20px #00000010;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+/* FOTO */
+.photo-box {
+    width: 260px;
+    height: 300px;
+    background: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DATA DIRI */
+.profile-info h2 {
+    color: #c8102e;
+    margin-bottom: 20px;
+}
+
+.data {
+    margin-bottom: 20px;
+}
+
+.data p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.data strong {
+    display: inline-block;
+    width: 100px;
+    color: #222;
+}
+
+.description {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+    margin-top: 50px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 4px solid #c8102e;
+    box-shadow: 0 5px 20px #00000010;
+    text-align: center;
+}
+
+.contact-card strong {
+    display: block;
+    color: #c8102e;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contact-card a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    color: #c8102e;
+    text-decoration: underline;
+}
+
+/* ALASAN */
+.reason {
+    margin-top: 40px;
+    background: #151515;
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 5px solid #f4c542;
+}
+
+.reason h2 {
+    color: #f4c542;
+    margin-bottom: 15px;
+}
+
+.reason p {
+    line-height: 1.7;
+    color: #ddd;
+}
+
+/* KOMENTAR */
+.comments {
+    margin-top: 50px;
+}
+
+.comments h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.comment-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* FORM KOMENTAR */
+.comment-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.comment-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.comment-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    outline: none;
+    border-color: #c8102e;
+}
+
+.comment-form button {
+    background: #c8102e;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background: #a50d25;
+}
+
+/* DAFTAR KOMENTAR */
+.comment-list {
+    margin-top: 25px;
+}
+
+.comment {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #c8102e;
+    box-shadow: 0 4px 15px #00000010;
+}
+
+.comment h3 {
+    color: #c8102e;
+    margin-bottom: 8px;
+}
+
+.comment p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.comment small {
+    display: block;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* KEMBALI */
+.back {
+    text-align: center;
+    margin: 40px 0 10px;
+}
+
+.back a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #f4c542;
+    color: #151515;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back a:hover {
+    background: #151515;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #151515;
+    color: #ddd;
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+footer p {
+    margin-top: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-box {
+        width: 220px;
+        height: 260px;
+    }
+
+    .data strong {
+        width: auto;
+        margin-right: 8px;
+    }
+
+    .about-title h1 {
+        font-size: 36px;
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

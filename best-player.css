@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* NAVIGASI */
+
+header {
+    background: #151515;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #c8102e;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+
+/* KONTEN */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 22px;
+}
+
+
+/* JUDUL */
+
+.player-title {
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    color: #f4c542;
+    background: #151515;
+    display: inline-block;
+    padding: 8px 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+.player-title h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 15px 0;
+    color: #151515;
+}
+
+.player-title p {
+    max-width: 700px;
+    color: #666;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* KARTU PEMAIN */
+
+.player-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border-top: 5px solid #c8102e;
+    box-shadow: 0 5px 20px #00000010;
+
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+/* FOTO PEMAIN */
+
+.player-photo {
+    width: 250px;
+    height: 300px;
+    flex-shrink: 0;
+    background: #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.player-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* INFORMASI PEMAIN */
+
+.player-info {
+    flex: 1;
+}
+
+.player-label {
+    color: #c8102e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.player-info h2 {
+    font-size: 32px;
+    margin: 8px 0;
+}
+
+.position {
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.player-info p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+/* KEMBALI */
+
+.back {
+    text-align: center;
+    margin: 45px 0 10px;
+}
+
+.back a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #f4c542;
+    color: #151515;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back a:hover {
+    background: #151515;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #151515;
+    color: #ddd;
+    padding: 30px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+footer p {
+    margin-top: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .player-title h1 {
+        font-size: 42px;
+    }
+
+    .player-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .player-photo {
+        width: 220px;
+        height: 270px;
+    }
+
+    .player-info h2 {
+        font-size: 27px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
